@@ -1,0 +1,55 @@
+.about {
+  margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
+}
+.about__title {
+  margin-top: calc(25px + 25 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(15px + 25 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 22 * ((100vw - 320px) / 1600));
+}
+.about__text {
+  margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
+  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+}
+.about__text span {
+  color: #000;
+  font-weight: 700;
+}
+
+.founder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.founder__name {
+  font-weight: 700;
+  color: #2F5AA8;
+  margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+}
+.founder__text {
+  font-size: calc(9px + 9 * ((100vw - 320px) / 1600));
+  margin-bottom: 10px;
+}
+.founder__img {
+  text-align: right;
+}
+.founder__img img {
+  width: 66%;
+}
+
+@media (max-width: 600px) {
+  .founder {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .founder__img {
+    text-align: center;
+  }
+  .founder__img img {
+    width: 66%;
+  }
+}/*# sourceMappingURL=aboutPage.css.map */
