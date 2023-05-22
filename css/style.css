@@ -9,6 +9,7 @@
 body {
   font-family: "Segoe UI";
   font-weight: 400;
+  font-size: calc(8px + 8 * ((100vw - 320px) / 1600));
 }
 
 span {
@@ -44,14 +45,14 @@ a {
 }
 
 .container {
-  margin-left: calc(10px + 70 * ((100vw - 320px) / 1600));
-  margin-right: calc(10px + 70 * ((100vw - 320px) / 1600));
+  margin-left: calc(0px + 80 * ((100vw - 320px) / 1600));
+  margin-right: calc(0px + 80 * ((100vw - 320px) / 1600));
 }
 
 .header {
   background: #F5F4F4;
-  padding-top: 20px;
-  padding-bottom: 195px;
+  padding-top: calc(10px + 10 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(90px + 105 * ((100vw - 320px) / 1600));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(26, 26, 26, 0.6)), color-stop(36.3%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/image2.png");
   background: linear-gradient(180deg, rgba(26, 26, 26, 0.6) 15%, rgba(0, 0, 0, 0) 36.3%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/image2.png");
   background-repeat: no-repeat;
@@ -66,7 +67,7 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: calc(10px + 20 * ((100vw - 320px) / 1600));
-  margin-bottom: 55px;
+  margin-bottom: calc(25px + 30 * ((100vw - 320px) / 1600));
   color: #FFF;
 }
 .header__search div {
@@ -81,7 +82,7 @@ a {
           justify-content: space-between;
   gap: 10px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: calc(50px + 50 * ((100vw - 320px) / 1600));
 }
 .header__nav a {
   font-size: calc(12px + 12 * ((100vw - 320px) / 1600));

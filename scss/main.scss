@@ -1,8 +1,7 @@
 @import 'mixin.scss';
 
 .content {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
 }
 
 .aside {
@@ -11,8 +10,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 20%;
 
-    &__header {}
 
     &__logo {
         background: #D9D9D9;
@@ -20,18 +19,23 @@
 }
 
 .main {
-    padding-bottom: 250px;
+    width: 80%;
+    @include adaptive-value('padding-bottom', 240, 120, 3);
+
+    section,
+    header {}
 }
 
 .ourServices {
-    margin-top: 70px;
-    margin-bottom: 80px;
+    @include adaptive-value('margin-top', 70, 30, 3);
+    @include adaptive-value('margin-bottom', 80, 40, 3);
     font-weight: 600;
 
     &__title {
+        font-weight: 600;
         color: #538FFC;
-        font-size: 20px;
-        margin-bottom: 30px;
+        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
     &__items {
@@ -44,41 +48,48 @@
         background: $color1;
         color: #FFF;
         text-align: center;
-        padding: 64px 0;
+        @include adaptive-value('padding-top', 64, 32, 3);
+        @include adaptive-value('padding-bottom', 64, 32, 3);
         border-radius: 3%;
 
         &-img {
-            width: 15%;
-            margin: 0 auto;
-            margin-bottom: 20px;
+            text-align: center;
+
+            img {
+                width: 15%;
+            }
+
+            @include adaptive-value('margin-bottom', 20, 10, 3);
         }
     }
 }
 
 .possibilities {
-    margin-bottom: 80px;
+    @include adaptive-value('margin-bottom', 80, 40, 3);
     font-weight: 600;
 
     &__title {
+        font-weight: 600;
         color: #538FFC;
-        font-size: 20px;
-        margin-bottom: 30px;
+        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
+        @include adaptive-value('gap', 30, 15, 3);
+        @include adaptive-value('gap', 30, 10, 3);
     }
 
     &__item {
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
         background: #F8F8F8;
-        padding-bottom: 95px;
+        @include adaptive-value('padding-bottom', 95, 45, 3);
 
         &-img {
             position: relative;
-            margin-bottom: 15px;
+            @include adaptive-value('margin-bottom', 15, 5, 3);
         }
 
         &-background {
@@ -95,18 +106,19 @@
         &-title {
             color: #333333;
             font-weight: 700;
-            margin-left: 20px;
+            @include adaptive-value('margin-left', 20, 5, 3);
         }
     }
 }
 
 .news {
-    margin-bottom: 175px;
+    @include adaptive-value('margin-bottom', 175, 85, 3);
     color: #333;
 
     &__title {
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-weight: 600;
+        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
     &__items {
@@ -134,9 +146,12 @@
 }
 
 .documents {
+    @include adaptive-value('margin-bottom', 50, 25, 3);
+
     &__title {
-        font-size: 20px;
-        margin-bottom: 50px;
+        font-weight: 600;
+        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('margin-bottom', 50, 25, 3);
     }
 
     &__content {
@@ -144,18 +159,68 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0% 100%;
-        padding-top: 325px;
+        @include adaptive-value('padding-top', 325, 160, 3);
     }
 
     &__names {
         background: rgba(83, 143, 252, 0.9);
         color: #FFF;
-        padding: 55px 0;
-        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('padding-top', 55, 25, 3);
+        @include adaptive-value('padding-bottom', 55, 25, 3);
+        @include adaptive-value('font-size', 20, 7, 3);
 
         .container {
             display: grid;
             grid-template-columns: auto auto auto;
         }
     }
+}
+
+.urls {
+    @include adaptive-value('margin-bottom', 95, 45, 3);
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('margin-bottom', 50, 25, 3);
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        @include adaptive-value('row-gap', 50, 25, 3);
+        font-weight: 600;
+
+        &__description {
+            color: #538FFC;
+
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.gallery {
+    &__title {
+        font-weight: 600;
+        display: flex;
+        @include adaptive-value('gap', 50, 25, 3);
+        @include adaptive-value('font-size', 20, 10, 3);
+        @include adaptive-value('margin-bottom', 50, 25, 3);
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include adaptive-value('gap', 30, 10, 3);
+        font-weight: 600;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+
 }
