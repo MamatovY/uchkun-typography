@@ -12,18 +12,62 @@
     justify-content: space-between;
     width: 20%;
 
-
     &__logo {
         background: #D9D9D9;
     }
+
+    &__content {
+        padding-top: 15px;
+        color: #FFF;
+        display: grid;
+        row-gap: 20px;
+        @include adaptive-value('font-size', 16, 5, 3);
+        @include adaptive-value('padding-left', 40, 10, 3);
+        @include adaptive-value('padding-right', 40, 10, 3);
+
+        &-link {
+            margin-left: 10%;
+        }
+
+        &-btn {
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+
+            img {
+                width: 10%;
+            }
+        }
+
+        &-img {}
+    }
+
+    &__footer {
+        &-link {
+            border-top: 1px solid #DBDBDB;
+            border-bottom: 1px solid #DBDBDB;
+            display: flex;
+            gap: 20px;
+            @include adaptive-value('margin-bottom', 25, 10, 3);
+            @include adaptive-value('padding-top', 25, 10, 3);
+            @include adaptive-value('padding-bottom', 25, 10, 3);
+            @include adaptive-value('padding-left', 40, 10, 3);
+            @include adaptive-value('padding-right', 40, 10, 3);
+        }
+
+        &-copyright {
+            color: #FFF;
+            @include adaptive-value('font-size', 11, 6, 3);
+            @include adaptive-value('padding-left', 40, 10, 3);
+            @include adaptive-value('padding-right', 40, 10, 3);
+        }
+    }
+
 }
 
 .main {
     width: 80%;
     @include adaptive-value('padding-bottom', 240, 120, 3);
-
-    section,
-    header {}
 }
 
 .ourServices {
@@ -48,8 +92,8 @@
         background: $color1;
         color: #FFF;
         text-align: center;
-        @include adaptive-value('padding-top', 64, 32, 3);
-        @include adaptive-value('padding-bottom', 64, 32, 3);
+        @include adaptive-value('padding-top', 64, 10, 3);
+        @include adaptive-value('padding-bottom', 64, 10, 3);
         border-radius: 3%;
 
         &-img {
@@ -85,7 +129,7 @@
     &__item {
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
         background: #F8F8F8;
-        @include adaptive-value('padding-bottom', 95, 45, 3);
+        @include adaptive-value('padding-bottom', 95, 20, 3);
 
         &-img {
             position: relative;
@@ -188,15 +232,26 @@
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 20px;
+        align-items: flex-start;
+        column-gap: 5px;
         @include adaptive-value('row-gap', 50, 25, 3);
         font-weight: 600;
 
+        &__title {
+            margin-bottom: 10px;
+        }
+
         &__description {
             color: #538FFC;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            line-height: 14px;
+            @include adaptive-value('line-height', 14, 10, 3);
 
-            span {
-                font-size: 30px;
+            img {
+                width: 10px;
+                height: 10px;
             }
         }
     }
@@ -221,6 +276,27 @@
     &__img {
         margin-bottom: 10px;
     }
+}
 
 
+
+@media (max-width:768px) {
+    .news {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .aside {
+        &__footer {
+            &-link {
+                display: block;
+
+                a {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 }

@@ -10,7 +10,7 @@
 body {
     font-family: 'Segoe UI';
     font-weight: 400;
-    @include adaptive-value('font-size', 16, 8, 3);
+    @include adaptive-value('font-size', 16, 6, 3);
 }
 
 span {
@@ -29,11 +29,11 @@ h1 {
 }
 
 h2 {
-    @include adaptive-value('font-size', 28, 10, 3);
+    @include adaptive-value('font-size', 28, 8, 3);
 }
 
 h3 {
-    @include adaptive-value('font-size', 24, 8, 3);
+    @include adaptive-value('font-size', 24, 7, 3);
 }
 
 img {
@@ -46,8 +46,8 @@ a {
 }
 
 .container {
-    @include adaptive-value('margin-left', 80, 0, 3);
-    @include adaptive-value('margin-right', 80, 0, 3);
+    @include adaptive-value('margin-left', 80, 10, 3);
+    @include adaptive-value('margin-right', 80, 10, 3);
 }
 
 .header {
@@ -93,5 +93,16 @@ a {
 
     h1 {
         color: #FFF;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .header {
+        &__nav {
+            display: block;
+            gap: 20px;
+        }
     }
 }
