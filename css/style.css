@@ -48,12 +48,31 @@ input {
   border: none;
   outline: none;
   width: 100%;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: calc(7px + 13 * ((100vw - 320px) / 1600));
   padding: calc(7px + 8 * ((100vw - 320px) / 1600));
 }
 
 .input {
   border-bottom: 1px solid #000;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #2F5AA8;
+  border-radius: 5px;
+  color: #000;
+  background-color: transparent;
+  font-weight: 600;
+  width: 20%;
+  cursor: pointer;
+  padding: calc(5px + 5 * ((100vw - 320px) / 1600));
+  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  width: calc(100px + 167 * ((100vw - 320px) / 1600));
+}
+.btn:hover {
+  background: #2F5AA8;
+  color: #FFF;
 }
 
 .container {
@@ -197,6 +216,9 @@ input {
   font-weight: 600;
   display: block;
   color: #2F5AA8;
+}
+.header__nav .container a:hover {
+  text-decoration: underline;
 }
 .header__nav .container .active {
   text-decoration: underline;

@@ -1,0 +1,48 @@
+@import 'mixin.scss';
+
+.contacts {
+    @include adaptive-value('margin-top', 50, 20, 3);
+
+    h3 {
+        font-weight: 700;
+    }
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value('margin-bottom', 30, 15, 3);
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        @include adaptive-value('gap', 30, 0, 3);
+    }
+
+    &__form {
+        width: 90%;
+    }
+
+    &__inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptive-value('margin-top', 30, 10, 3);
+        @include adaptive-value('column-gap', 50, 10, 3);
+    }
+
+    &__policy {
+        border-top: 1px solid #000;
+        @include adaptive-value('margin-top', 100, 25, 3);
+        @include adaptive-value('padding-top', 10, 5, 3);
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    &__address {
+        >div {
+            @include adaptive-value('margin-bottom', 30, 10, 3);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.header__nav .container .active {
+  pointer-events: auto;
+}
+
+.design {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.design__title {
+  font-weight: 600;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.design__text {
+  margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
+  font-size: calc(7px + 13 * ((100vw - 320px) / 1600));
+}/*# sourceMappingURL=designPage.css.map */

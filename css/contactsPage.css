@@ -1,0 +1,38 @@
+.contacts {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.contacts h3 {
+  font-weight: 700;
+}
+.contacts__title {
+  font-weight: 600;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.contacts__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: calc(0px + 30 * ((100vw - 320px) / 1600));
+}
+.contacts__form {
+  width: 90%;
+}
+.contacts__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
+  -webkit-column-gap: calc(10px + 40 * ((100vw - 320px) / 1600));
+     -moz-column-gap: calc(10px + 40 * ((100vw - 320px) / 1600));
+          column-gap: calc(10px + 40 * ((100vw - 320px) / 1600));
+}
+.contacts__policy {
+  border-top: 1px solid #000;
+  margin-top: calc(25px + 75 * ((100vw - 320px) / 1600));
+  padding-top: calc(5px + 5 * ((100vw - 320px) / 1600));
+}
+.contacts .btn {
+  margin-left: 0;
+  margin-top: 10px;
+}
+.contacts__address > div {
+  margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+}/*# sourceMappingURL=contactsPage.css.map */

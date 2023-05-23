@@ -84,7 +84,7 @@
 
         &-btn {
             cursor: pointer;
-            color: #2F5AA8;
+            color: $color1;
             text-decoration: underline;
             @include adaptive-value('margin-top', 30, 10, 3);
         }

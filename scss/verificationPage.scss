@@ -20,25 +20,10 @@
 
     &__policy {
         display: block;
-        color: #2F5AA8;
+        color: $color1;
         @include adaptive-value('margin-top', 30, 10, 3);
         @include adaptive-value('margin-bottom', 50, 20, 3);
     }
-
-    &__btn {
-        display: block;
-        margin: 0 auto;
-        border: 2px solid #2F5AA8;
-        border-radius: 5px;
-        color: #000;
-        background-color: transparent;
-        font-weight: 600;
-        width: 20%;
-        @include adaptive-value('padding', 10, 5, 3);
-        @include adaptive-value('font-size', 18, 10, 3);
-        @include adaptive-value('width', 267, 100, 3);
-    }
-
 }
 
 

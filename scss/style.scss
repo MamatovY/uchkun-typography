@@ -49,12 +49,32 @@ input {
     border: none;
     outline: none;
     width: 100%;
-    @include adaptive-value('font-size', 20, 10, 3);
+    @include adaptive-value('font-size', 20, 7, 3);
     @include adaptive-value('padding', 15, 7, 3);
 }
 
 .input {
     border-bottom: 1px solid #000;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid $color1;
+    border-radius: 5px;
+    color: #000;
+    background-color: transparent;
+    font-weight: 600;
+    width: 20%;
+    cursor: pointer;
+    @include adaptive-value('padding', 10, 5, 3);
+    @include adaptive-value('font-size', 18, 10, 3);
+    @include adaptive-value('width', 267, 100, 3);
+
+    &:hover {
+        background: $color1;
+        color: #FFF;
+    }
 }
 
 .container {
@@ -137,7 +157,7 @@ input {
 
 
 .header {
-    color: #2F5AA8;
+    color: $color1;
 
     &__top {
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
@@ -165,7 +185,7 @@ input {
             justify-content: space-between;
 
             svg path {
-                fill: #2F5AA8;
+                fill: $color1;
             }
 
             div {
@@ -192,7 +212,11 @@ input {
                 font-family: 'Segoe UI';
                 font-weight: 600;
                 display: block;
-                color: #2F5AA8;
+                color: $color1;
+            }
+
+            a:hover {
+                text-decoration: underline;
             }
 
             .active {

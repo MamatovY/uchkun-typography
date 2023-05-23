@@ -28,7 +28,7 @@
 
     &__name {
         font-weight: 700;
-        color: #2F5AA8;
+        color: $color1;
         @include adaptive-value('margin-bottom', 30, 10, 3);
     }
 

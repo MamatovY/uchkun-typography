@@ -7,9 +7,9 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Проверка документов</title>
+    <title>Контакты</title>
     <link rel="stylesheet"
-        href="../css/verificationPage.css">
+        href="../css/contactsPage.css">
     <link rel="stylesheet"
         href="../css/style.css">
     <link rel="shortcut icon"
@@ -99,7 +99,7 @@
                 <div class="header__top">
                     <div class="container">
                         <div class="header__top-path">
-                            Главная / <span> Проверка документов</span>
+                            Главная / <span> Контакты</span>
                         </div>
                         <div class="header__top-lang">
                             <div class="header__top-kg">
@@ -129,58 +129,99 @@
                         <a href="aboutPage.html">О Нас</a>
                         <a href="servicesPage.html">Услуги</a>
                         <a href="productionPage.html">Продукция</a>
-                        <a href="contactsPage.html">Контакты</a>
-                        <a href="verificationPage.html"
-                            class="active">Проверка
-                            документов</a>
+                        <a href="contactsPage.html"
+                            class="active">Контакты</a>
+                        <a href="verificationPage.html">Проверка документов</a>
                     </div>
                 </nav>
             </header>
 
-            <section class="verification">
+            <section class="contacts">
                 <div class="container">
-                    <h2 class="verification__title">
-                        <span>&ndash;</span> Проверка документов
+                    <h2 class="contacts__title">
+                        <span>&ndash;</span> Контакты
                     </h2>
-                    <form class="verification__form">
-                        <h3>ПРОВЕРКА ПОДЛИННОСТИ ДОКУМЕНТА</h3>
+                    <div class="contacts__content">
+                        <form class="contacts__form">
+                            <h3 class="contacts__form-question">
+                                Заинтересованы в наших услугах?
+                            </h3>
+                            <p class="contact__form-description">
+                                У вас есть идея и вы думаете что мы сможем ее реализовать? <br>
+                                Мы всегда рады обсудить возможность вашей идеи и реализовать ее так как вы хотите, заполните форму ниже и мы непременно свяжемся с вами.
+                            </p>
+                            <div class="contacts__inputs">
+                                <div class="input">
+                                    <input type="text"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Ваше имя">
+                                </div>
+                                <div class="input">
+                                    <input type="text"
+                                        name="company"
+                                        id="company"
+                                        placeholder="Ваша Компания (если есть)">
+                                </div>
+                                <div class="input">
+                                    <input type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Ваш email *"
+                                        required>
+                                </div>
+                                <div class="input">
+                                    <input type="tel"
+                                        name="tel"
+                                        id="tel"
+                                        placeholder="Введите свой номер телефона">
+                                </div>
+                            </div>
 
-                        <div class="input">
-                            <input type="email"
-                                name="email"
-                                id="email"
-                                placeholder="email">
+                            <div class="contacts__policy">
+                                Эта форма собирает вашу контактную информацию, чтобы мы могли переписываться с вами. <br>
+                                Ознакомьтесь с нашей политикой конфиденциальности для получения дополнительной <br>
+                                информации о том, как мы защищаем и управляем вашими данными.
+                            </div>
+                            <button class="btn"
+                                type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                        <div class="contacts__address">
+                            <div>
+                                <h3>
+                                    Адрес:
+                                </h3>
+                                <p>
+                                    Кыргызская Республика, г. Бишкек, ул. С. Ибраимова, 24
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3>Контактный телефон:</h3>
+                                <p>
+                                    +996 312 59-16-03
+                                </p>
+                                <p>
+                                    факс/fax: +996 312 591600
+                                </p>
+
+                            </div>
+                            <div>
+                                <h3>
+                                    Электронные адреса:
+                                </h3>
+                                <p>info@oaouchkun.kg - общие вопросы <br>
+                                    production@oaouchkun.kg - отдел производства <br>
+                                    marketing@oaouchkun.kg - отдел маркетинга и продаж <br>
+                                    designers@oaouchkun.kg - дизайнерская группа <br>
+                                    hr@oaouchkun.kg - отдел кадров <br>
+                                    lawyer@oaouchkun.kg - юрист <br>
+                                    it@oaouchkun.kg - системный администратор</p>
+                            </div>
                         </div>
-
-                        <div class="input">
-                            <input type="tel"
-                                name="number"
-                                id="number"
-                                placeholder="Введите номер телефона">
-                        </div>
-
-                        <div class="input">
-                            <input type="text"
-                                name="name"
-                                id="name"
-                                placeholder="ФИО - владельца документа">
-                        </div>
-
-                        <div class="input">
-                            <input type="text"
-                                name="documentation"
-                                id="documentation"
-                                placeholder="Номер документа">
-                        </div>
-                        <a href="#"
-                            class="verification__policy">
-                            Эта форма собирает вашу контактную информацию, чтобы мы могли переписываться с вами. Ознакомьтесь с нашей политикой конфиденциальности для получения дополнительной
-                            информации о том, как мы защищаем и управляем вашими данными.
-                        </a>
-
-                        <button class="btn">НАЙТИ</button>
-
-                    </form>
+                    </div>
                 </div>
             </section>
         </main>

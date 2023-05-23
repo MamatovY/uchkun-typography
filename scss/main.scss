@@ -119,6 +119,8 @@
             color: #333333;
             font-weight: 700;
             @include adaptive-value('margin-left', 20, 5, 3);
+
+
         }
     }
 }
