@@ -7,9 +7,9 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Услуги</title>
+    <title>Проверка документов</title>
     <link rel="stylesheet"
-        href="../css/servicesPage.css">
+        href="../css/verificationPage.css">
     <link rel="stylesheet"
         href="../css/style.css">
     <link rel="shortcut icon"
@@ -99,7 +99,7 @@
                 <div class="header__top">
                     <div class="container">
                         <div class="header__top-path">
-                            Главная / <span> Услуги</span>
+                            Главная / <span> Проверка документов</span>
                         </div>
                         <div class="header__top-lang">
                             <div class="header__top-kg">
@@ -127,77 +127,59 @@
                     <div class="container">
                         <a href="../index.html">Главная</a>
                         <a href="aboutPage.html">О Нас</a>
-                        <a href="servicesPage.html"
-                            class="active">Услуги</a>
+                        <a href="servicesPage.html">Услуги</a>
                         <a href="productionPage.html">Продукция</a>
-                        <a href="contactsPage.html">Контакты</a>
-                        <a href="verificationPage.html">Проверка
+                        <a href="/contactsPage.html">Контакты</a>
+                        <a href="/verificationPage.html"
+                            class="active">Проверка
                             документов</a>
                     </div>
                 </nav>
             </header>
 
-            <section class="services">
+            <section class="verification">
                 <div class="container">
-                    <h2 class="services__title">
-                        <span>&ndash;</span> Услуги
+                    <h2 class="verification__title">
+                        <span>&ndash;</span> Проверка документов
                     </h2>
-                    <div class="services__items">
-                        <div class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/dop.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Допечатная подготовка
-                            </h3>
+                    <form class="verification__form">
+                        <h3>ПРОВЕРКА ПОДЛИННОСТИ ДОКУМЕНТА</h3>
+
+                        <div class="input">
+                            <input type="email"
+                                name="email"
+                                id="email"
+                                placeholder="email">
                         </div>
-                        <div class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/ofs.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Офсетный цех
-                            </h3>
+
+                        <div class="input">
+                            <input type="text"
+                                name="number"
+                                id="number"
+                                placeholder="Введите номер телефона">
                         </div>
-                        <div class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/per.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Переплетный цех
-                            </h3>
+
+                        <div class="input">
+                            <input type="text"
+                                name="name"
+                                id="name"
+                                placeholder="ФИО - владельца документа">
                         </div>
-                        <div class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/gaz.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Газетный цех
-                            </h3>
+
+                        <div class="input">
+                            <input type="text"
+                                name="documentation"
+                                id="documentation"
+                                placeholder="Номер документа">
                         </div>
-                        <div class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/prov.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Проверка дипломов
-                            </h3>
-                        </div>
-                        <div class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/rek.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Реклама
-                            </h3>
-                        </div>
-                    </div>
+                        <a class="verification__policy">
+                            Эта форма собирает вашу контактную информацию, чтобы мы могли переписываться с вами. Ознакомьтесь с нашей политикой конфиденциальности для получения дополнительной
+                            информации о том, как мы защищаем и управляем вашими данными.
+                        </a>
+
+                        <button class="verification__btn">НАЙТИ</button>
+
+                    </form>
                 </div>
             </section>
         </main>

@@ -1,0 +1,108 @@
+@import 'mixin.scss';
+
+.production {
+    @include adaptive-value('margin-top', 50, 20, 3);
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value('margin-bottom', 30, 15, 3);
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @include adaptive-value('gap', 40, 10, 3);
+    }
+
+    &__item {
+        background: #FFF;
+        filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.35));
+
+
+        &-img {
+            position: relative;
+        }
+
+        &-like {
+            position: absolute;
+            background: #FFF;
+            bottom: 5%;
+            left: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            @include adaptive-value('width', 40, 15, 3);
+            @include adaptive-value('height', 40, 15, 3);
+
+            &.active {
+                svg {
+                    fill: red;
+
+                    path {
+                        stroke: none;
+                    }
+                }
+            }
+
+            svg {
+                width: 50%;
+                height: 50%;
+
+            }
+        }
+
+
+        &-content {
+            @include adaptive-value('padding', 16, 4, 3);
+            padding-right: 0;
+            padding-top: 0;
+        }
+
+        &-title {
+            font-weight: 700;
+            @include adaptive-value('font-size', 20, 7, 3);
+        }
+
+        &-description {
+            @include adaptive-value('font-size', 14, 4, 3);
+            @include adaptive-value('margin-top', 10, 5, 3);
+            color: #AEAEAE;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            @include adaptive-value('gap', 10, 5, 3);
+        }
+
+        &-price {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            @include adaptive-value('gap', 10, 5, 3);
+        }
+
+        &-btn {
+            cursor: pointer;
+            color: #2F5AA8;
+            text-decoration: underline;
+            @include adaptive-value('margin-top', 30, 10, 3);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .production {
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .production {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

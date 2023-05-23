@@ -1,0 +1,90 @@
+.production {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.production__title {
+  font-weight: 600;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.production__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: calc(10px + 30 * ((100vw - 320px) / 1600));
+}
+.production__item {
+  background: #FFF;
+  -webkit-filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.35));
+}
+.production__item-img {
+  position: relative;
+}
+.production__item-like {
+  position: absolute;
+  background: #FFF;
+  bottom: 5%;
+  left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  width: calc(15px + 25 * ((100vw - 320px) / 1600));
+  height: calc(15px + 25 * ((100vw - 320px) / 1600));
+}
+.production__item-like.active svg {
+  fill: red;
+}
+.production__item-like.active svg path {
+  stroke: none;
+}
+.production__item-like svg {
+  width: 50%;
+  height: 50%;
+}
+.production__item-content {
+  padding: calc(4px + 12 * ((100vw - 320px) / 1600));
+  padding-right: 0;
+  padding-top: 0;
+}
+.production__item-title {
+  font-weight: 700;
+  font-size: calc(7px + 13 * ((100vw - 320px) / 1600));
+}
+.production__item-description {
+  font-size: calc(4px + 10 * ((100vw - 320px) / 1600));
+  margin-top: calc(5px + 5 * ((100vw - 320px) / 1600));
+  color: #AEAEAE;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  gap: calc(5px + 5 * ((100vw - 320px) / 1600));
+}
+.production__item-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  gap: calc(5px + 5 * ((100vw - 320px) / 1600));
+}
+.production__item-btn {
+  cursor: pointer;
+  color: #2F5AA8;
+  text-decoration: underline;
+  margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
+}
+
+@media (max-width: 768px) {
+  .production__items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .production__items {
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=productionPage.css.map */

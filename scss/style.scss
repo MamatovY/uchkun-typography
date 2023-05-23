@@ -45,10 +45,23 @@ a {
     text-decoration: none;
 }
 
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    @include adaptive-value('font-size', 20, 10, 3);
+    @include adaptive-value('padding', 15, 7, 3);
+}
+
+.input {
+    border-bottom: 1px solid #000;
+}
+
 .container {
     @include adaptive-value('margin-left', 80, 10, 3);
     @include adaptive-value('margin-right', 80, 10, 3);
 }
+
 
 
 .content {
@@ -56,6 +69,7 @@ a {
 }
 
 .aside {
+    min-height: 100vh;
     background: $color1;
     padding: 58px 0;
     display: flex;
@@ -142,16 +156,16 @@ a {
             }
         }
 
+        &-kg {
+            text-decoration: underline;
+        }
+
         .container {
             display: flex;
             justify-content: space-between;
 
             svg path {
                 fill: #2F5AA8;
-            }
-
-            &-kg {
-                text-decoration: underline;
             }
 
             div {

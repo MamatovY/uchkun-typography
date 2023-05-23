@@ -1,0 +1,51 @@
+@import 'mixin.scss';
+
+.verification {
+    @include adaptive-value('margin-top', 50, 20, 3);
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value('margin-bottom', 30, 15, 3);
+    }
+
+    &__form {
+        margin: 0 auto;
+        width: 50%;
+
+        h3 {
+            text-align: center;
+            @include adaptive-value('margin-bottom', 50, 10, 3);
+        }
+    }
+
+    &__policy {
+        display: block;
+        color: #2F5AA8;
+        @include adaptive-value('margin-top', 30, 10, 3);
+        @include adaptive-value('margin-bottom', 50, 20, 3);
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #2F5AA8;
+        border-radius: 5px;
+        color: #000;
+        background-color: transparent;
+        font-weight: 600;
+        width: 20%;
+        @include adaptive-value('padding', 10, 5, 3);
+        @include adaptive-value('font-size', 18, 10, 3);
+        @include adaptive-value('width', 267, 100, 3);
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .verification {
+        &__form {
+            width: 80%;
+        }
+    }
+}

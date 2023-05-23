@@ -44,6 +44,18 @@ a {
   text-decoration: none;
 }
 
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  padding: calc(7px + 8 * ((100vw - 320px) / 1600));
+}
+
+.input {
+  border-bottom: 1px solid #000;
+}
+
 .container {
   margin-left: calc(10px + 70 * ((100vw - 320px) / 1600));
   margin-right: calc(10px + 70 * ((100vw - 320px) / 1600));
@@ -56,6 +68,7 @@ a {
 }
 
 .aside {
+  min-height: 100vh;
   background: #2F5AA8;
   padding: 58px 0;
   display: -webkit-box;
@@ -146,6 +159,9 @@ a {
 .header__top-path span {
   color: #000;
 }
+.header__top-kg {
+  text-decoration: underline;
+}
 .header__top .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,9 +172,6 @@ a {
 }
 .header__top .container svg path {
   fill: #2F5AA8;
-}
-.header__top .container-kg {
-  text-decoration: underline;
 }
 .header__top .container div {
   cursor: pointer;
