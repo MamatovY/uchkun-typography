@@ -10,7 +10,7 @@
 body {
     font-family: 'Segoe UI';
     font-weight: 400;
-    @include adaptive-value('font-size', 16, 6, 3);
+    @include adaptive-value('font-size', 16, 12, 3);
 }
 
 span {
@@ -25,7 +25,7 @@ h3 {
 }
 
 h1 {
-    @include adaptive-value('font-size', 50, 25, 3);
+    @include adaptive-value('font-size', 50, 20, 3);
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-    @include adaptive-value('font-size', 24, 7, 3);
+    @include adaptive-value('font-size', 24, 16, 3);
 }
 
 img {
@@ -229,19 +229,122 @@ input {
     h1 {
         color: #FFF;
     }
+
+    &__burger {
+        display: none;
+        background: #FFF;
+        color: #000;
+        align-items: center;
+        justify-content: space-between;
+        @include adaptive-value('padding', 30, 18, 3);
+
+        &-logo {
+            width: 39%;
+        }
+
+        &-icon {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: grid;
+        }
+
+        .line {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            transition: transform 0.3s ease;
+        }
+
+        .line1 {
+            transform-origin: top left;
+        }
+
+        .line3 {
+            transform-origin: bottom left;
+        }
+
+    }
+
+    &.active {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: $color1;
+        top: 0;
+        left: 0;
+        z-index: 99;
+
+        .header {
+            &__burger {
+                background: #D9D9D9;
+
+                &-icon {
+                    .line1 {
+                        transform: translateY(0px) rotate(45deg);
+                    }
+
+                    .line2 {
+                        opacity: 0;
+                    }
+
+                    .line3 {
+                        transform: translateY(0px) rotate(-45deg);
+                    }
+                }
+            }
+
+            &__nav {
+                display: block;
+
+                .container {
+                    text-align: center;
+                    display: block;
+
+                    a {
+                        font-size: 20px;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 
 @media (max-width:768px) {
     .header {
-        &__nav {
-            .container {
-                display: block;
-                gap: 20px;
+        &__burger {
+            display: flex;
+        }
+
+        &__top {
+            padding: 0;
+
+            &-lang {
+                display: none;
             }
         }
+
+        &__nav {
+            display: none;
+        }
     }
+
+    .aside {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
 }
 
 

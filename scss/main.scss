@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: 0% 50%;
     @include adaptive-value('padding-top', 20, 10, 3);
-    @include adaptive-value('padding-bottom', 195, 90, 3);
+    @include adaptive-value('padding-bottom', 195, 120, 3);
 
     .header {
         color: #FFF;
@@ -46,22 +46,22 @@
     &__title {
         font-weight: 600;
         color: #538FFC;
-        @include adaptive-value('font-size', 20, 10, 3);
+        font-size: 20px;
         @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @include adaptive-value('gap', 30, 10, 3);
+        gap: 30px;
     }
 
     &__item {
         background: $color1;
         color: #FFF;
         text-align: center;
-        @include adaptive-value('padding-top', 64, 10, 3);
-        @include adaptive-value('padding-bottom', 64, 10, 3);
+        @include adaptive-value('padding-top', 64, 50, 3);
+        @include adaptive-value('padding-bottom', 64, 50, 3);
         border-radius: 3%;
 
         &-img {
@@ -83,14 +83,13 @@
     &__title {
         font-weight: 600;
         color: #538FFC;
-        @include adaptive-value('font-size', 20, 10, 3);
+        font-size: 20px;
         @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @include adaptive-value('gap', 30, 15, 3);
         @include adaptive-value('gap', 30, 10, 3);
     }
 
@@ -131,14 +130,14 @@
 
     &__title {
         font-weight: 600;
-        @include adaptive-value('font-size', 20, 10, 3);
+        font-size: 20px;
         @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @include adaptive-value('gap', 30, 10, 3);
+        gap: 30px;
     }
 
     &__item {
@@ -164,7 +163,7 @@
 
     &__title {
         font-weight: 600;
-        @include adaptive-value('font-size', 20, 10, 3);
+        font-size: 20px;
         @include adaptive-value('margin-bottom', 50, 25, 3);
     }
 
@@ -195,16 +194,16 @@
 
     &__title {
         font-weight: 600;
-        @include adaptive-value('font-size', 20, 10, 3);
+        font-size: 20px;
         @include adaptive-value('margin-bottom', 50, 25, 3);
     }
 
-    &__content {
+    &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: flex-start;
         column-gap: 5px;
-        @include adaptive-value('row-gap', 50, 25, 3);
+        gap: 30px;
         font-weight: 600;
 
         &__title {
@@ -232,15 +231,16 @@
         font-weight: 600;
         display: flex;
         @include adaptive-value('gap', 50, 25, 3);
-        @include adaptive-value('font-size', 20, 10, 3);
+        font-size: 20px;
         @include adaptive-value('margin-bottom', 50, 25, 3);
     }
 
-    &__content {
+    &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         font-weight: 600;
-        @include adaptive-value('gap', 30, 10, 3);
+        @include adaptive-value('column-gap', 30, 10, 3);
+        @include adaptive-value('row-gap', 80, 50, 3);
     }
 
     &__img {
@@ -251,22 +251,33 @@
 
 
 @media (max-width:768px) {
-    .news {
-        &__items {
-            grid-template-columns: 1fr 1fr;
+    .banner {
+        background-position: 0% 0%;
+        padding-top: 0;
+
+
+        h1 {
+            margin-top: 50px;
         }
     }
 
-    .aside {
-        &__footer {
-            &-link {
-                display: block;
+    .ourServices,
+    .news,
+    .urls {
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+        }
+    }
 
-                a {
-                    display: block;
-                    margin-bottom: 5px;
-                }
-            }
+
+}
+
+@media (max-width:600px) {
+
+    .possibilities,
+    .gallery {
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
         }
     }
 }

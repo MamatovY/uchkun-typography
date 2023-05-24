@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: 0% 50%;
   padding-top: calc(10px + 10 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(90px + 105 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(120px + 75 * ((100vw - 320px) / 1600));
 }
 .banner .header {
   color: #FFF;
@@ -37,20 +37,20 @@
 .ourServices__title {
   font-weight: 600;
   color: #538FFC;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 20px;
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .ourServices__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+  gap: 30px;
 }
 .ourServices__item {
   background: #2F5AA8;
   color: #FFF;
   text-align: center;
-  padding-top: calc(10px + 54 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(10px + 54 * ((100vw - 320px) / 1600));
+  padding-top: calc(50px + 14 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(50px + 14 * ((100vw - 320px) / 1600));
   border-radius: 3%;
 }
 .ourServices__item-img {
@@ -68,13 +68,12 @@
 .possibilities__title {
   font-weight: 600;
   color: #538FFC;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 20px;
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .possibilities__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: calc(15px + 15 * ((100vw - 320px) / 1600));
   gap: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
 .possibilities__item {
@@ -108,13 +107,13 @@
 }
 .news__title {
   font-weight: 600;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 20px;
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .news__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+  gap: 30px;
 }
 .news__item-content {
   display: -webkit-box;
@@ -139,7 +138,7 @@
 }
 .documents__title {
   font-weight: 600;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 20px;
   margin-bottom: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
 .documents__content {
@@ -166,10 +165,10 @@
 }
 .urls__title {
   font-weight: 600;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 20px;
   margin-bottom: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
-.urls__content {
+.urls__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-align: start;
@@ -178,13 +177,13 @@
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
-  row-gap: calc(25px + 25 * ((100vw - 320px) / 1600));
+  gap: 30px;
   font-weight: 600;
 }
-.urls__content__title {
+.urls__items__title {
   margin-bottom: 10px;
 }
-.urls__content__description {
+.urls__items__description {
   color: #538FFC;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +195,7 @@
   line-height: 14px;
   line-height: calc(10px + 4 * ((100vw - 320px) / 1600));
 }
-.urls__content__description img {
+.urls__items__description img {
   width: 10px;
   height: 10px;
 }
@@ -207,28 +206,39 @@
   display: -ms-flexbox;
   display: flex;
   gap: calc(25px + 25 * ((100vw - 320px) / 1600));
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 20px;
   margin-bottom: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
-.gallery__content {
+.gallery__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-weight: 600;
-  gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+  -webkit-column-gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+     -moz-column-gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+          column-gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+  row-gap: calc(50px + 30 * ((100vw - 320px) / 1600));
 }
 .gallery__img {
   margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-  .news__items {
-    grid-template-columns: 1fr 1fr;
+  .banner {
+    background-position: 0% 0%;
+    padding-top: 0;
   }
-  .aside__footer-link {
-    display: block;
+  .banner h1 {
+    margin-top: 50px;
   }
-  .aside__footer-link a {
-    display: block;
-    margin-bottom: 5px;
+  .ourServices__items,
+  .news__items,
+  .urls__items {
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .possibilities__items,
+  .gallery__items {
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
   }
 }/*# sourceMappingURL=main.css.map */
