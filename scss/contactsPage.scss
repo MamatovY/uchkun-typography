@@ -15,7 +15,8 @@
     &__content {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        @include adaptive-value('gap', 30, 0, 3);
+        @include adaptive-value('column-gap', 30, 0, 3);
+        @include adaptive-value('row-gap', 60, 30, 2);
     }
 
     &__form {
@@ -31,7 +32,7 @@
 
     &__policy {
         border-top: 1px solid #000;
-        @include adaptive-value('margin-top', 100, 25, 3);
+        @include adaptive-value('margin-top', 120, 80, 3);
         @include adaptive-value('padding-top', 10, 5, 3);
     }
 
@@ -43,6 +44,19 @@
     &__address {
         >div {
             @include adaptive-value('margin-bottom', 30, 10, 3);
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .contacts {
+        &__content {
+            grid-template-columns: 1fr;
+        }
+
+        &__inputs {
+            grid-template-columns: 1fr;
         }
     }
 }

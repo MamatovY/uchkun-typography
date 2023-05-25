@@ -19,7 +19,7 @@
   margin-bottom: calc(0px + 10 * ((100vw - 320px) / 1600));
 }
 .print__text {
-  font-size: calc(7px + 13 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }
 .print ul {
   margin: 3px 0;

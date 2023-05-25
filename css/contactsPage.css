@@ -11,7 +11,15 @@
 .contacts__content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: calc(0px + 30 * ((100vw - 320px) / 1600));
+  -webkit-column-gap: calc(0px + 30 * ((100vw - 320px) / 1600));
+     -moz-column-gap: calc(0px + 30 * ((100vw - 320px) / 1600));
+          column-gap: calc(0px + 30 * ((100vw - 320px) / 1600));
+  row-gap: 60px;
+}
+@media (min-width: 1280px) {
+  .contacts__content {
+    row-gap: calc(30px + 30 * ((100vw - 320px) / 1600));
+  }
 }
 .contacts__form {
   width: 90%;
@@ -26,7 +34,7 @@
 }
 .contacts__policy {
   border-top: 1px solid #000;
-  margin-top: calc(25px + 75 * ((100vw - 320px) / 1600));
+  margin-top: calc(80px + 40 * ((100vw - 320px) / 1600));
   padding-top: calc(5px + 5 * ((100vw - 320px) / 1600));
 }
 .contacts .btn {
@@ -35,4 +43,13 @@
 }
 .contacts__address > div {
   margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+}
+
+@media (max-width: 768px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+  }
+  .contacts__inputs {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=contactsPage.css.map */

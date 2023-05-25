@@ -4,11 +4,11 @@
 .about__title {
   margin-top: calc(25px + 25 * ((100vw - 320px) / 1600));
   margin-bottom: calc(15px + 25 * ((100vw - 320px) / 1600));
-  font-size: calc(16px + 22 * ((100vw - 320px) / 1600));
+  font-size: calc(24px + 14 * ((100vw - 320px) / 1600));
 }
 .about__text {
   margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
 }
 .about__text span {
   color: #000;
@@ -31,7 +31,7 @@
   margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
 .founder__text {
-  font-size: calc(9px + 9 * ((100vw - 320px) / 1600));
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
   margin-bottom: 10px;
 }
 .founder__img {

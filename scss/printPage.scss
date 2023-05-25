@@ -28,7 +28,7 @@
     }
 
     &__text {
-        @include adaptive-value('font-size', 20, 7, 3);
+        @include adaptive-value('font-size', 20, 14, 3);
     }
 
     ul {

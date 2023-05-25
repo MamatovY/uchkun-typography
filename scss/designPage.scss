@@ -18,6 +18,6 @@
 
     &__text {
         @include adaptive-value('margin-top', 30, 10, 3);
-        @include adaptive-value('font-size', 20, 7, 3);
+        @include adaptive-value('font-size', 20, 14, 3);
     }
 }

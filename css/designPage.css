@@ -11,5 +11,5 @@
 }
 .design__text {
   margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
-  font-size: calc(7px + 13 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }/*# sourceMappingURL=designPage.css.map */

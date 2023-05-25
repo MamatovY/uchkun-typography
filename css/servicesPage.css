@@ -10,14 +10,14 @@
 .services__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+  gap: 30px;
 }
 .services__item {
   background: #2F5AA8;
   color: #FFF;
   text-align: center;
-  padding-top: calc(10px + 54 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(10px + 54 * ((100vw - 320px) / 1600));
+  padding-top: calc(50px + 14 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(50px + 14 * ((100vw - 320px) / 1600));
   border-radius: 3%;
 }
 .services__item-img {
@@ -26,4 +26,10 @@
 }
 .services__item-img img {
   width: 15%;
+}
+
+@media (max-width: 768px) {
+  .services__items {
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  }
 }/*# sourceMappingURL=servicesPage.css.map */
