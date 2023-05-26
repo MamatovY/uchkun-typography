@@ -15,7 +15,10 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.banner .header__top .container svg path {
+.banner .header__top__form {
+  border: none;
+}
+.banner .header__top-open path {
   fill: #FFF;
 }
 .banner .header__nav {

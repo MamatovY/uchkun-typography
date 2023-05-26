@@ -16,8 +16,14 @@
         &__top {
             box-shadow: none;
 
-            .container svg path {
-                fill: #FFF;
+            &__form {
+                border: none;
+            }
+
+            &-open {
+                path {
+                    fill: #FFF;
+                }
             }
         }
 

@@ -103,7 +103,7 @@ input {
         @include adaptive-value('padding-top', 20, 10, 3);
         @include adaptive-value('padding-bottom', 20, 5, 3);
 
-        &-lang {
+        &__lang {
             display: flex;
             justify-content: flex-end;
             @include adaptive-value('gap', 30, 10, 3);
@@ -117,11 +117,71 @@ input {
             }
         }
 
+        &__search {
+            @include adaptive-value('gap', 10, 5, 3);
+        }
+
+        &-open {
+            cursor: pointer;
+
+            path {
+                fill: $color1;
+            }
+        }
+
+        &-close {
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__form {
+            display: grid;
+            background: #FFF;
+            border: 1px solid rgba($color: #5E5D5D, $alpha: 0.3);
+            border-radius: 10px;
+            grid-template-columns: auto 150px auto;
+            align-items: center;
+            @include adaptive-value('padding-left', 10, 5, 3);
+
+            &-svg {
+                @include adaptive-value('margin-right', 15, 5, 3);
+
+                path {
+                    fill: #5E5D5D;
+                }
+            }
+
+            button {
+                border-radius: 0 7px 7px 0;
+                background: $color1;
+                border: none;
+                color: #FFF;
+                @include adaptive-value('padding', 10, 5, 3);
+            }
+
+            input {
+                width: auto;
+                margin-left: 0;
+                padding: 0;
+                background: none
+            }
+        }
+
+        &__search,
+        &__lang {
+            display: none;
+            align-items: center;
+
+            &.active {
+                display: flex;
+            }
+        }
+
         &-path {
             a {
                 color: $color1;
             }
-
 
             span {
                 color: #000;
@@ -130,14 +190,11 @@ input {
 
 
 
+
+
         .container {
             display: flex;
             justify-content: space-between;
-
-            svg path {
-                fill: $color1;
-            }
-
 
         }
     }
@@ -249,6 +306,7 @@ input {
             }
 
             &__top {
+                display: none;
 
                 &-path,
                 span {
@@ -421,9 +479,11 @@ input {
         &__top {
             padding: 0;
             box-shadow: none;
+            margin-top: 30px;
+            @include adaptive-value('margin-top', 40, 10, 3);
 
-            &-lang {
-                display: none;
+            &__form {
+                grid-template-columns: auto 100px auto;
             }
         }
 
