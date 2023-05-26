@@ -1,6 +1,16 @@
 const burgerIcon = document.querySelector('.header__burger-icon');
 const asideIcon = document.querySelector('.aside__button');
 const header = document.querySelector('.header');
+const headerTop = document.querySelector('.header__top-lang'); // select the parent element
+const languages = headerTop.querySelectorAll('.header__top-en, .header__top-ru, .header__top-kg'); // select all language elements
+
+languages.forEach(language => {
+    language.addEventListener('click', function () {
+        languages.forEach(lang => lang.classList.remove('active')); // remove active class from all language elements
+        this.classList.add('active'); // add active class to the clicked language element
+    });
+});
+
 
 burgerIcon.addEventListener('click', () => {
     header.classList.toggle('active');

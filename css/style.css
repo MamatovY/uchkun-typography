@@ -109,11 +109,17 @@ input {
           justify-content: flex-end;
   gap: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
+.header__top-lang div {
+  cursor: pointer;
+}
+.header__top-lang .active {
+  text-decoration: underline;
+}
+.header__top-path a {
+  color: #2F5AA8;
+}
 .header__top-path span {
   color: #000;
-}
-.header__top-kg {
-  text-decoration: underline;
 }
 .header__top .container {
   display: -webkit-box;
@@ -125,9 +131,6 @@ input {
 }
 .header__top .container svg path {
   fill: #2F5AA8;
-}
-.header__top .container div {
-  cursor: pointer;
 }
 .header__nav {
   width: 100%;

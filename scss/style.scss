@@ -107,17 +107,28 @@ input {
             display: flex;
             justify-content: flex-end;
             @include adaptive-value('gap', 30, 10, 3);
+
+            div {
+                cursor: pointer;
+            }
+
+            .active {
+                text-decoration: underline;
+            }
         }
 
         &-path {
+            a {
+                color: $color1;
+            }
+
+
             span {
                 color: #000;
             }
         }
 
-        &-kg {
-            text-decoration: underline;
-        }
+
 
         .container {
             display: flex;
@@ -127,9 +138,7 @@ input {
                 fill: $color1;
             }
 
-            div {
-                cursor: pointer;
-            }
+
         }
     }
 
