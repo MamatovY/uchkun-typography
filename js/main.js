@@ -9,6 +9,14 @@ const langs = document.querySelector('.header__top__lang');
 const searchClose = document.querySelector('.header__top-close');
 const langOpen = document.querySelector('.header__top-open');
 
+const likeBtn = document.querySelectorAll(".production__item-like");
+
+likeBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+    });
+});
+
 searchClose.addEventListener('click', e => {
     e.preventDefault();
     search.classList.remove('active');

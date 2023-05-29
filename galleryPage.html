@@ -7,22 +7,37 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Услуги</title>
+    <title>Видео и фото галерея</title>
     <link rel="stylesheet"
-        href="../css/servicesPage.css">
+        href="css/style.css">
     <link rel="stylesheet"
-        href="../css/style.css">
+        href="css/galleryPage.css">
     <link rel="shortcut icon"
-        href="../../img/logo.png"
+        href="img/logo.png"
         type="image/png">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <div class="content">
         <aside class="aside">
+            <div class="aside__button">
+                <svg class="right"
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+            </div>
             <div class="aside__header">
                 <div class="aside__logo">
-                    <img src="../../img/logo.png"
+                    <img src="img/logo.png"
                         alt="">
                 </div>
 
@@ -65,15 +80,7 @@
                         СМИ о нас
                     </a>
 
-                    <div class="aside__content-img">
-                        <img src="../../img/banner1.jpg"
-                            alt="">
-                    </div>
 
-                    <div class="aside__content-img">
-                        <img src="../../img/banner2.png"
-                            alt="">
-                    </div>
                 </div>
             </div>
 
@@ -93,7 +100,7 @@
             <header class="header">
                 <div class="header__burger">
                     <div class="header__burger-logo">
-                        <img src="../img/logo.png"
+                        <img src="img/logo.png"
                             alt="">
                     </div>
 
@@ -106,7 +113,7 @@
                 <div class="header__top">
                     <div class="container">
                         <div class="header__top-path">
-                            <a href="../index.html">Главная</a> / <span> Услуги</span>
+                            <a href="index.html">Главная</a> / <span> Видео и фото галерея</span>
                         </div>
                         <div class="header__top__search">
                             <form action="#"
@@ -167,90 +174,92 @@
 
                 <nav class="header__nav">
                     <div class="container">
-                        <a href="../index.html">Главная</a>
+                        <a href="index.html">Главная</a>
                         <a href="aboutPage.html">О Нас</a>
-                        <a href="servicesPage.html"
-                            class="active">Услуги</a>
-                        <a href="productionPage.html">Продукция</a>
+                        <a href="servicesPage.html">Услуги</a>
+                        <a href="productionPage.html"
+                            class="active">Продукция</a>
                         <a href="contactsPage.html">Контакты</a>
-                        <a href="verificationPage.html">Проверка
-                            документов</a>
+                        <a href="verificationPage.html">Проверка документов</a>
                     </div>
                 </nav>
             </header>
 
-            <section class="services">
+            <section class="galleryPage">
                 <div class="container">
-                    <h2 class="services__title">
-                        <span>&ndash;</span> Услуги
-                    </h2>
-                    <div class="services__items">
-                        <a href="https://www.oaouchkun.kg/"
-                            class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/dop.svg"
-                                    alt="">
+                    <div class="galleryPage__title">
+                        <div class="galleryPage__title__left">
+                            <div class="galleryPage__title__date">
+                                <h2>
+                                    15
+                                </h2>
+                                <div>
+                                    МАЙ
+                                </div>
+                                <div>
+                                    2023
+                                </div>
                             </div>
-                            <h3>
-                                Допечатная подготовка
-                            </h3>
-                        </a>
-                        <a href="https://www.oaouchkun.kg/"
-                            class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/ofs.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Офсетный цех
-                            </h3>
-                        </a>
-                        <a href="https://www.oaouchkun.kg/"
-                            class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/per.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Переплетный цех
-                            </h3>
-                        </a>
-                        <a href="https://www.oaouchkun.kg/"
-                            class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/gaz.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Газетный цех
-                            </h3>
-                        </a>
-                        <a href="https://www.oaouchkun.kg/"
-                            class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/prov.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Проверка дипломов
-                            </h3>
-                        </a>
-                        <a href="https://www.oaouchkun.kg/"
-                            class="services__item">
-                            <div class="services__item-img">
-                                <img src="../img/icons/rek.svg"
-                                    alt="">
-                            </div>
-                            <h3>
-                                Реклама
-                            </h3>
-                        </a>
+                            <div class="galleryPage__title__line"></div>
+                            <h2 class="galleryPage__title__h2">
+                                Заголовок
+                            </h2>
+                        </div>
                     </div>
+
+                    <div class="swiper galleryPage__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://www.tripzaza.com/ru/destinations/wp-content/uploads/2018/06/Dostoprimechatelnosti-Kirgizii-e1528640117864.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://pibig.info/uploads/posts/2021-05/1621922241_4-pibig_info-p-gornii-kirgizstan-priroda-krasivo-foto-4.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://static-2.akipress.org/st_gallery/70/554970.492283d4ba8753291b21651eea07aad4.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://st-1.akipress.org/127/.storage/limon2/images/may2017/a28a8400cff0ab0775eeab15ef5ea7f4.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <p class="galleryPage__text">
+                        Следует отметить, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании приоритизации разума над эмоциями. Так же важно что
+                        сплочённость команды профессионалов играет важную роль в формировании приоритизации разума над эмоциями. В частности, разбавленное.
+                    </p>
+
+                    <p class="galleryPage__text">
+                        Изрядной долей эмпатии, рациональное мышление является качественно новой ступенью новых предложений. С другой стороны, дальнейшее развитие различных форм деятельности является
+                        качественно новой ступенью новых предложений. А также активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть
+                        ограничены исключительно образом мышления.
+                    </p>
+                    <p class="galleryPage__text">
+                        Мы вынуждены отталкиваться от того, что дальнейшее развитие различных форм деятельности говорит о возможностях стандартных подходов. Таким образом, высокое качество позиционных
+                        исследований предполагает независимые способы реализации системы обучения кадров, соответствующей насущным потребностям. Прежде всего, глубокий уровень погружения, а также
+                        свежий взгляд на привычные вещи — безусловно открывает новые горизонты для кластеризации усилий.
+                    </p>
+                    <p class="galleryPage__text">
+                        Идейные соображения высшего порядка, а также разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации новых предложений. Таким образом,
+                        понимание сути ресурсосберегающих технологий является качественно новой ступенью системы массового участия. Противоположная точка зрения подразумевает, что сделанные на базе
+                        интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, рассмотрены исключительно в разрезе маркетинговых и
+                        финансовых предпосылок. Каждый из нас понимает очевидную вещь: внедрение современных методик является качественно новой ступенью экономической целесообразности принимаемых
+                        решений. Предварительные выводы неутешительны: убеждённость некоторых оппонентов, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для
+                        первоочередных требований. В частности, разбавленное изрядной долей эмпатии, рациональное мышление предполагает независимые способы реализации благоприятных перспектив.
+                        Безусловно, повышение уровня гражданского сознания позволяет оценить значение дальнейших направлений развития.
+                    </p>
+
                 </div>
             </section>
         </main>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/galleryPage.js"></script>
 </body>
 
 </html>
