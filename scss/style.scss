@@ -363,16 +363,6 @@ input {
         &-link {
             margin-left: 10%;
         }
-
-        &-btn {
-            display: flex;
-            align-items: flex-start;
-            cursor: pointer;
-
-            img {
-                @include adaptive-value('width', 15, 5, 3);
-            }
-        }
     }
 
     &__footer {

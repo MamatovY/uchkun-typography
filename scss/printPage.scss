@@ -20,6 +20,11 @@
         @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
+    &__img {
+        width: 50%;
+        @include adaptive-value('margin-top', 30, 15, 3);
+    }
+
     &__name {
         font-weight: 700;
         color: $color1;

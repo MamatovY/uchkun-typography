@@ -1,7 +1,5 @@
 @import 'mixin.scss';
 
-.header {}
-
 .about {
     @include adaptive-value('margin-bottom', 40, 20, 3);
 

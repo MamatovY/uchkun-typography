@@ -12,6 +12,10 @@
   font-weight: 600;
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
+.print__img {
+  width: 50%;
+  margin-top: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
 .print__name {
   font-weight: 700;
   color: #2F5AA8;

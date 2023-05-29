@@ -336,18 +336,6 @@ input {
 .aside__content-link {
   margin-left: 10%;
 }
-.aside__content-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  cursor: pointer;
-}
-.aside__content-btn img {
-  width: calc(5px + 10 * ((100vw - 320px) / 1600));
-}
 .aside__footer {
   margin-top: calc(50px + 50 * ((100vw - 320px) / 1600));
 }
