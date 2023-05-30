@@ -162,11 +162,12 @@
   color: #FFF;
   padding-top: calc(25px + 30 * ((100vw - 320px) / 1600));
   padding-bottom: calc(25px + 30 * ((100vw - 320px) / 1600));
-  font-size: calc(7px + 13 * ((100vw - 320px) / 1600));
+  font-size: calc(9px + 11 * ((100vw - 320px) / 1600));
 }
 .documents__names .container {
   display: grid;
   grid-template-columns: auto auto auto;
+  row-gap: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
 
 .urls {
@@ -252,6 +253,10 @@
   }
 }
 @media (max-width: 600px) {
+  .documents__names .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
   .gallery__img img {
     height: auto;
   }

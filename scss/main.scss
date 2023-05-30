@@ -192,11 +192,12 @@
         color: #FFF;
         @include adaptive-value('padding-top', 55, 25, 3);
         @include adaptive-value('padding-bottom', 55, 25, 3);
-        @include adaptive-value('font-size', 20, 7, 3);
+        @include adaptive-value('font-size', 20, 9, 3);
 
         .container {
             display: grid;
             grid-template-columns: auto auto auto;
+            @include adaptive-value('row-gap', 30, 10, 3);
         }
     }
 }
@@ -297,6 +298,14 @@
 }
 
 @media (max-width:600px) {
+    .documents {
+        &__names {
+            .container {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+    }
 
     .gallery {
         &__img {
