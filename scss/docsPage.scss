@@ -1,0 +1,27 @@
+@import 'mixin.scss';
+
+.docsPage {
+    @include adaptive-value('margin-top', 50, 20, 3);
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value('margin-bottom', 30, 15, 3);
+    }
+
+    &__grid {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(7, 1fr);
+        color: #959595;
+        border-bottom: 1px solid #B6B8BC;
+        @include adaptive-value('padding', 20, 10, 3);
+        padding-left: 0;
+        padding-right: 0;
+        @include adaptive-value('font-size', 16, 6, 3);
+
+        &.title {
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.docsPage {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.docsPage__title {
+  font-weight: 600;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.docsPage__grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(7, 1fr);
+  color: #959595;
+  border-bottom: 1px solid #B6B8BC;
+  padding: calc(10px + 10 * ((100vw - 320px) / 1600));
+  padding-left: 0;
+  padding-right: 0;
+  font-size: calc(6px + 10 * ((100vw - 320px) / 1600));
+}
+.docsPage__grid.title {
+  color: #000;
+  font-weight: 700;
+}/*# sourceMappingURL=docsPage.css.map */
