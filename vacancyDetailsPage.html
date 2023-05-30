@@ -7,11 +7,11 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-    <link rel="stylesheet"
-        href="css/contactsPage.css">
+    <title>Вакансии подробнее</title>
     <link rel="stylesheet"
         href="css/style.css">
+    <link rel="stylesheet"
+        href="css/vacancyDetailsPage.css">
     <link rel="shortcut icon"
         href="img/logo.svg"
         type="image/png">
@@ -90,22 +90,22 @@
 
         <main class="main">
             <header class="header">
-                <div class="header__top">
-                    <div class="header__burger">
-                        <div class="header__burger-logo">
-                            <img src="img/logo.svg"
-                                alt="">
-                        </div>
-
-                        <div class="header__burger-icon">
-                            <span class="line line1"></span>
-                            <span class="line line2"></span>
-                            <span class="line line3"></span>
-                        </div>
+                <div class="header__burger">
+                    <div class="header__burger-logo">
+                        <img src="img/logo.svg"
+                            alt="">
                     </div>
+
+                    <div class="header__burger-icon">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                </div>
+                <div class="header__top">
                     <div class="container">
                         <div class="header__top-path">
-                            <a href="index.html">Главная</a> / <span> Контакты</span>
+                            <a href="index.html">Главная /</a> <a href="vacanciesPage.html">Вакансии /</a> <span>Вакансии подробнее</span>
                         </div>
                         <div class="header__top__search">
                             <form action="#"
@@ -166,102 +166,112 @@
 
                 <nav class="header__nav">
                     <div class="container">
-                        <a href="index.html">Главная</a>
+                        <a href="index.html"
+                            class="active">Главная</a>
                         <a href="aboutPage.html">О Нас</a>
                         <a href="servicesPage.html">Услуги</a>
                         <a href="productionPage.html">Продукция</a>
-                        <a href="contactsPage.html"
-                            class="active">Контакты</a>
+                        <a href="contactsPage.html">Контакты</a>
                         <a href="verificationPage.html">Проверка документов</a>
                     </div>
                 </nav>
             </header>
 
-            <section class="contacts">
+            <section class="vacancyDetails">
                 <div class="container">
-                    <h2 class="contacts__title">
-                        <span>&ndash;</span> Контакты
+                    <h2 class="vacancyDetails__title">
+                        <span>&ndash;</span> Печатник на станок
                     </h2>
-                    <div class="contacts__content">
-                        <form class="contacts__form">
-                            <h3 class="contacts__form-question">
-                                Заинтересованы в наших услугах?
-                            </h3>
-                            <p class="contact__form-description">
-                                У вас есть идея и вы думаете что мы сможем ее реализовать? <br>
-                                Мы всегда рады обсудить возможность вашей идеи и реализовать ее так как вы хотите, заполните форму ниже и мы непременно свяжемся с вами.
-                            </p>
-                            <div class="contacts__inputs">
-                                <div class="input">
-                                    <input type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Ваше имя">
-                                </div>
-                                <div class="input">
-                                    <input type="text"
-                                        name="company"
-                                        id="company"
-                                        placeholder="Ваша Компания (если есть)">
-                                </div>
-                                <div class="input">
-                                    <input type="email"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Ваш email *"
-                                        required>
-                                </div>
-                                <div class="input">
-                                    <input type="tel"
-                                        name="tel"
-                                        id="tel"
-                                        placeholder="Введите свой номер телефона">
-                                </div>
-                            </div>
+                    <h3 class="vacancyDetails__text">
+                        <span>
+                            <li>
+                                30 000- 50 000 сом
+                            </li>
+                        </span>
+                    </h3>
 
-                            <div class="contacts__policy">
-                                Эта форма собирает вашу контактную информацию, чтобы мы могли переписываться с вами. <br>
-                                Ознакомьтесь с нашей политикой конфиденциальности для получения дополнительной <br>
-                                информации о том, как мы защищаем и управляем вашими данными.
-                            </div>
-                            <button class="btn"
-                                type="submit">
-                                Отправить
-                            </button>
-                        </form>
-                        <div class="contacts__address">
-                            <div>
-                                <h3>
-                                    Адрес:
-                                </h3>
-                                <p>
-                                    Кыргызская Республика, г. Бишкек, ул. С. Ибраимова, 24
-                                </p>
-                            </div>
+                    <h3 class="vacancyDetails__name">
+                        Обязанности:
+                    </h3>
+                    <div class="vacancyDetails__text">
+                        <li>
+                            Прием товаров на складе согласно путевому листу;
+                        </li>
+                        <li>
+                            Развозка товаров по городу;
+                        </li>
+                        <li>
+                            Выезд к поставщикам согласно путевому листу;
+                        </li>
+                        <li>
+                            Грамотная приемка, размещение и сдача товаров согласно сопроводительным документам;
+                        </li>
+                        <li>
+                            Прием, хранение и сдача денежных средств и документов в бухгалтерию;
+                        </li>
+                        <li>
+                            Аккуратное вождение и соблюдение ПДД.
+                        </li>
+                    </div>
 
-                            <div>
-                                <h3>Контактный телефон:</h3>
-                                <p>
-                                    +996 312 59-16-03
-                                </p>
-                                <p>
-                                    факс/fax: +996 312 591600
-                                </p>
+                    <h3 class="vacancyDetails__name">
+                        Обязанности:
+                    </h3>
+                    <div class="vacancyDetails__text">
+                        <li>
+                            Прием товаров на складе согласно путевому листу;
+                        </li>
+                        <li>
+                            Развозка товаров по городу;
+                        </li>
+                        <li>
+                            Выезд к поставщикам согласно путевому листу;
+                        </li>
+                        <li>
+                            Грамотная приемка, размещение и сдача товаров согласно сопроводительным документам;
+                        </li>
+                        <li>
+                            Прием, хранение и сдача денежных средств и документов в бухгалтерию;
+                        </li>
+                        <li>
+                            Аккуратное вождение и соблюдение ПДД.
+                        </li>
+                    </div>
 
-                            </div>
-                            <div>
-                                <h3>
-                                    Электронные адреса:
-                                </h3>
-                                <p>info@oaouchkun.kg - общие вопросы <br>
-                                    production@oaouchkun.kg - отдел производства <br>
-                                    marketing@oaouchkun.kg - отдел маркетинга и продаж <br>
-                                    designers@oaouchkun.kg - дизайнерская группа <br>
-                                    hr@oaouchkun.kg - отдел кадров <br>
-                                    lawyer@oaouchkun.kg - юрист <br>
-                                    it@oaouchkun.kg - системный администратор</p>
-                            </div>
-                        </div>
+                    <h3 class="vacancyDetails__name">
+                        Условия:
+                    </h3>
+                    <div class="vacancyDetails__text">
+                        <li>
+                            График работы: понедельник – пятница, с 9:00 до 18:00 часов.
+                        </li>
+                        <li>
+                            Заключение трудового договора согласно ТК КР.
+                        </li>
+                        <li>
+                            Компенсация амортизации транспортного средства.
+                        </li>
+                        <li>
+                            Компенсация ГСМ.
+                        </li>
+                    </div>
+
+                    <h3 class="vacancyDetails__name">
+                        Контакты
+                    </h3>
+                    <div class="vacancyDetails__text">
+                        <li>
+                            График работы: понедельник – пятница, с 9:00 до 18:00 часов.
+                        </li>
+                        <li>
+                            Заключение трудового договора согласно ТК КР.
+                        </li>
+                        <li>
+                            Компенсация амортизации транспортного средства.
+                        </li>
+                        <li>
+                            Компенсация ГСМ.
+                        </li>
                     </div>
                 </div>
             </section>

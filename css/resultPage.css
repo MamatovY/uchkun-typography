@@ -96,6 +96,49 @@
   padding: 1% 3%;
   margin-right: 3%;
 }
+.resultPage__items {
+  display: grid;
+  gap: calc(20px + 30 * ((100vw - 320px) / 1600));
+  margin-top: calc(25px + 25 * ((100vw - 320px) / 1600));
+}
+.resultPage__item {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.resultPage__item-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  gap: calc(10px + 30 * ((100vw - 320px) / 1600));
+}
+.resultPage__item-line {
+  border-left: 1px solid rgba(190, 190, 190, 0.7);
+}
+.resultPage__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.resultPage__item-link {
+  border: 1px solid #9E9E9E;
+  border-radius: 60px;
+  color: #000;
+  padding: calc(5px + 5 * ((100vw - 320px) / 1600));
+  padding-left: calc(15px + 15 * ((100vw - 320px) / 1600));
+  padding-right: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
 
 @media (max-width: 600px) {
   .resultPage__form-checkboxs {

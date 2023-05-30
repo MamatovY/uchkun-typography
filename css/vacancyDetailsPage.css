@@ -1,0 +1,14 @@
+.vacancyDetails {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.vacancyDetails__title {
+  font-weight: 700;
+}
+.vacancyDetails__name {
+  font-weight: 700;
+  margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
+}
+.vacancyDetails__text span li {
+  list-style-type: none;
+  margin-left: 3%;
+}/*# sourceMappingURL=vacancyDetailsPage.css.map */

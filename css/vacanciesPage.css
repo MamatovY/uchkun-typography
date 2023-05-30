@@ -3,12 +3,25 @@
 }
 .vacancies__title {
   font-weight: 700;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
-.vacancies__name {
-  font-weight: 700;
-  margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
+.vacancies__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(30px + 10 * ((100vw - 320px) / 1600));
 }
-.vacancies__text span li {
-  list-style-type: none;
-  margin-left: 3%;
+.vacancies__item-link {
+  text-decoration: underline;
+  color: #2F5AA8;
+}
+
+@media (max-width: 600px) {
+  .vacancies__items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .vacancies__items {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=vacanciesPage.css.map */

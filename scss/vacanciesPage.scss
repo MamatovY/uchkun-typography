@@ -5,20 +5,36 @@
 
     &__title {
         font-weight: 700;
+        @include adaptive-value('margin-bottom', 30, 15, 3);
     }
 
-    &__name {
-        font-weight: 700;
-        @include adaptive-value ('margin-top', 30, 10, 3);
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include adaptive-value ('gap', 40, 30, 3);
     }
 
-    &__text {
-        span {
-            li {
-                list-style-type: none;
-                margin-left: 3%;
-            }
+    &__item {
+        &-link {
+            text-decoration: underline;
+            color: $color1;
         }
+    }
+}
 
+
+@media (max-width:600px) {
+    .vacancies {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .vacancies {
+        &__items {
+            grid-template-columns: 1fr;
+        }
     }
 }
