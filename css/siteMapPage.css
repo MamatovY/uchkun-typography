@@ -3,7 +3,6 @@
 }
 .siteMap__title {
   font-weight: 600;
-  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .siteMap__text {
   margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
@@ -11,7 +10,6 @@
 }
 .siteMap__ul {
   padding-left: 0;
-  list-style-type: decimal;
 }
 .siteMap__ul li {
   margin-left: 1%;
@@ -21,5 +19,8 @@
   margin-left: 1%;
 }
 .siteMap__name {
+  margin-top: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.siteMap__name a {
   color: #2F5AA8;
 }/*# sourceMappingURL=siteMapPage.css.map */

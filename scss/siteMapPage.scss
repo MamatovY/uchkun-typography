@@ -5,7 +5,7 @@
 
     &__title {
         font-weight: 600;
-        @include adaptive-value('margin-bottom', 30, 15, 3);
+
     }
 
     &__text {
@@ -15,7 +15,6 @@
 
     &__ul {
         padding-left: 0;
-        list-style-type: decimal;
 
         li {
             margin-left: 1%;
@@ -28,6 +27,10 @@
     }
 
     &__name {
-        color: $color1;
+        @include adaptive-value('margin-top', 30, 15, 3);
+
+        a {
+            color: $color1;
+        }
     }
 }
