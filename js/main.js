@@ -11,6 +11,13 @@ const langOpen = document.querySelector('.header__top-open');
 
 const likeBtn = document.querySelectorAll(".production__item-like");
 
+const faqBox = document.querySelectorAll(".faqPage__box");
+faqBox.forEach((box) => {
+    box.addEventListener("click", () => {
+        box.classList.toggle("active");
+    });
+});
+
 likeBtn.forEach(btn => {
     btn.addEventListener("click", () => {
         btn.classList.toggle("active");

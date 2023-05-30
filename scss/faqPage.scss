@@ -1,0 +1,59 @@
+@import 'mixin.scss';
+
+.faqPage {
+    @include adaptive-value('margin-top', 50, 20, 3);
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value('margin-bottom', 30, 15, 3);
+    }
+
+    &__box {
+        cursor: pointer;
+        @include adaptive-value('margin-bottom', 30, 10, 3);
+
+        &-questions {
+            display: flex;
+            align-items: center;
+            background: #E6E6E6;
+            justify-content: space-between;
+            @include adaptive-value('padding', 15, 5, 3);
+
+            svg {
+                width: 4%;
+                height: 4%;
+            }
+        }
+
+        &-answers {
+            display: none;
+            @include adaptive-value('padding', 15, 5, 3);
+
+            a {
+                color: $color1;
+            }
+        }
+
+        .plus {
+            display: block;
+        }
+
+        .minus {
+            display: none;
+        }
+
+        &.active {
+            .faqPage__box-answers {
+                display: block;
+            }
+
+            .minus {
+                display: block;
+            }
+
+            .plus {
+                display: none;
+            }
+        }
+    }
+}
