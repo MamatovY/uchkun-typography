@@ -2,13 +2,13 @@
   pointer-events: auto;
 }
 
-.galleryPage {
+.newsPage {
   margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
 }
-.galleryPage h2 {
+.newsPage h2 {
   font-weight: 700;
 }
-.galleryPage__title {
+.newsPage__title {
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,23 +20,23 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.galleryPage__title__left {
+.newsPage__title__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: calc(5px + 45 * ((100vw - 320px) / 1600));
 }
-.galleryPage__title__date {
+.newsPage__title__date {
   text-align: center;
   font-weight: 600;
 }
-.galleryPage__title__date h2 {
+.newsPage__title__date h2 {
   color: #2F5AA8;
 }
-.galleryPage__title__line {
+.newsPage__title__line {
   border-right: 1px solid rgba(190, 190, 190, 0.7);
 }
-.galleryPage__title__h2 {
+.newsPage__title__h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,25 +44,28 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.galleryPage__text {
+.newsPage__text {
   margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
   font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }
-.galleryPage .mySwiper.swiper .swiper-slide {
+.newsPage .mySwiper.swiper {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.newsPage .mySwiper.swiper .swiper-slide {
   height: 100%;
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
-.galleryPage .mySwiper.swiper .swiper-slide img {
+.newsPage .mySwiper.swiper .swiper-slide img {
   height: 37.037037037vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.galleryPage .mySwiper.swiper .swiper-pagination {
+.newsPage .mySwiper.swiper .swiper-pagination {
   bottom: 0px;
   z-index: 99;
 }
-.galleryPage .mySwiper.swiper .swiper-pagination span {
+.newsPage .mySwiper.swiper .swiper-pagination span {
   background-color: #2F5AA8;
   width: calc(8px + 10 * ((100vw - 320px) / 1600));
   height: calc(8px + 10 * ((100vw - 320px) / 1600));
-}/*# sourceMappingURL=galleryPage.css.map */
+}/*# sourceMappingURL=newsPage.css.map */

@@ -11,4 +11,25 @@
 .vacancyDetails__text span li {
   list-style-type: none;
   margin-left: 3%;
+}
+.vacancyDetails .mySwiper.swiper {
+  margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.vacancyDetails .mySwiper.swiper .swiper-slide {
+  height: 100%;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.vacancyDetails .mySwiper.swiper .swiper-slide img {
+  height: 37.037037037vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.vacancyDetails .mySwiper.swiper .swiper-pagination {
+  bottom: 0px;
+  z-index: 99;
+}
+.vacancyDetails .mySwiper.swiper .swiper-pagination span {
+  background-color: #2F5AA8;
+  width: calc(8px + 10 * ((100vw - 320px) / 1600));
+  height: calc(8px + 10 * ((100vw - 320px) / 1600));
 }/*# sourceMappingURL=vacancyDetailsPage.css.map */

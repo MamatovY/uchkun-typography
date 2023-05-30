@@ -21,4 +21,29 @@
         }
 
     }
+
+    .mySwiper.swiper {
+        @include adaptive-value('margin-top', 50, 20, 3);
+
+        .swiper-slide {
+            height: 100%;
+            @include adaptive-value('margin-bottom', 30, 15, 3);
+
+            img {
+                height: calc(100vw/2.7);
+                object-fit: cover;
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 0px;
+            z-index: 99;
+
+            span {
+                background-color: $color1;
+                @include adaptive-value('width', 18, 8, 3);
+                @include adaptive-value('height', 18, 8, 3);
+            }
+        }
+    }
 }

@@ -1,4 +1,4 @@
-const swiper = new Swiper(".galleryPage__swiper", {
+const swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
