@@ -46,6 +46,17 @@
     }
 }
 
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include adaptive-value('margin-top', 50, 30, 3);
+    @include adaptive-value('gap', 30, 10, 3);
+
+    img {
+        height: calc(100vw/7.5);
+    }
+}
+
 @media (max-width:600px) {
     .founder {
         grid-template-columns: 1fr;
@@ -60,5 +71,21 @@
         }
     }
 
+    .photos {
+        grid-template-columns: 1fr 1fr;
 
+        img {
+            height: calc(100vw/4);
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .photos {
+        grid-template-columns: 1fr;
+
+        img {
+            height: auto;
+        }
+    }
 }
