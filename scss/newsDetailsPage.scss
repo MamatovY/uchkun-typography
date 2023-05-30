@@ -8,7 +8,7 @@
     }
 }
 
-.newsPage {
+.newsDetailsPage {
     @include adaptive-value('margin-top', 50, 20, 3);
 
     h2 {
@@ -65,7 +65,7 @@
 
         .swiper-pagination {
             bottom: 0px;
-            z-index: 99;
+            z-index: 98;
 
             span {
                 background-color: $color1;

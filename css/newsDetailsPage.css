@@ -2,13 +2,13 @@
   pointer-events: auto;
 }
 
-.newsPage {
+.newsDetailsPage {
   margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
 }
-.newsPage h2 {
+.newsDetailsPage h2 {
   font-weight: 700;
 }
-.newsPage__title {
+.newsDetailsPage__title {
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,23 +20,23 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.newsPage__title__left {
+.newsDetailsPage__title__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: calc(5px + 45 * ((100vw - 320px) / 1600));
 }
-.newsPage__title__date {
+.newsDetailsPage__title__date {
   text-align: center;
   font-weight: 600;
 }
-.newsPage__title__date h2 {
+.newsDetailsPage__title__date h2 {
   color: #2F5AA8;
 }
-.newsPage__title__line {
+.newsDetailsPage__title__line {
   border-right: 1px solid rgba(190, 190, 190, 0.7);
 }
-.newsPage__title__h2 {
+.newsDetailsPage__title__h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,28 +44,28 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.newsPage__text {
+.newsDetailsPage__text {
   margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
   font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }
-.newsPage .mySwiper.swiper {
+.newsDetailsPage .mySwiper.swiper {
   margin-top: calc(20px + 30 * ((100vw - 320px) / 1600));
 }
-.newsPage .mySwiper.swiper .swiper-slide {
+.newsDetailsPage .mySwiper.swiper .swiper-slide {
   height: 100%;
   margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
-.newsPage .mySwiper.swiper .swiper-slide img {
+.newsDetailsPage .mySwiper.swiper .swiper-slide img {
   height: 37.037037037vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.newsPage .mySwiper.swiper .swiper-pagination {
+.newsDetailsPage .mySwiper.swiper .swiper-pagination {
   bottom: 0px;
-  z-index: 99;
+  z-index: 98;
 }
-.newsPage .mySwiper.swiper .swiper-pagination span {
+.newsDetailsPage .mySwiper.swiper .swiper-pagination span {
   background-color: #2F5AA8;
   width: calc(8px + 10 * ((100vw - 320px) / 1600));
   height: calc(8px + 10 * ((100vw - 320px) / 1600));
-}/*# sourceMappingURL=newsPage.css.map */
+}/*# sourceMappingURL=newsDetailsPage.css.map */

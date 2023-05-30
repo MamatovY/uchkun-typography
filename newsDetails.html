@@ -7,14 +7,17 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Вакансии</title>
+    <title>Новости подробнее</title>
     <link rel="stylesheet"
         href="css/style.css">
     <link rel="stylesheet"
-        href="css/vacanciesPage.css">
+        href="css/newsDetailsPage.css">
     <link rel="shortcut icon"
         href="img/logo.svg"
         type="image/png">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -105,7 +108,7 @@
                 <div class="header__top">
                     <div class="container">
                         <div class="header__top-path">
-                            <a href="index.html">Главная /</a> <span> Вакансии</span>
+                            <a href="index.html">Главная</a> / <span> Новости / Подробнее</span>
                         </div>
                         <div class="header__top__search">
                             <form action="#"
@@ -166,197 +169,107 @@
 
                 <nav class="header__nav">
                     <div class="container">
-                        <a href="index.html"
-                            class="active">Главная</a>
+                        <a href="index.html">Главная</a>
                         <a href="aboutPage.html">О Нас</a>
                         <a href="servicesPage.html">Услуги</a>
-                        <a href="productionPage.html">Продукция</a>
+                        <a href="productionPage.html"
+                            class="active">Продукция</a>
                         <a href="contactsPage.html">Контакты</a>
                         <a href="verificationPage.html">Проверка документов</a>
                     </div>
                 </nav>
             </header>
 
-            <section class="vacancies">
+            <section class="newsDetailsPage">
                 <div class="container">
-                    <h2 class="vacancies__title">
-                        <span>&ndash;</span> Вакансии
-                    </h2>
-                    <div class="vacancies__items">
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
+                    <div class="newsDetailsPage__title">
+                        <div class="newsDetailsPage__title__left">
+                            <div class="newsDetailsPage__title__date">
+                                <h2>
+                                    15
+                                </h2>
+                                <div>
+                                    МАЙ
+                                </div>
+                                <div>
+                                    2023
+                                </div>
                             </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
-                        </div>
-                        <div class="vacancies__item">
-                            <div class="vacancies__item-img">
-                                <img src="img/vacancies/vacancies.jpg"
-                                    alt="">
-                            </div>
-                            <h3 class="vacancies__item-title">
-                                Печатник на станок
-                            </h3>
-                            <h3 class="vacancies__item-price">
-                                <span>
-                                    30 000- 50 000 сом
-                                </span>
-                            </h3>
-                            <a class="vacancies__item-link"
-                                href="vacancyDetailsPage.html">Подробнее</a>
+                            <div class="newsDetailsPage__title__line"></div>
+                            <h2 class="newsDetailsPage__title__h2">
+                                Заголовок
+                            </h2>
                         </div>
                     </div>
-                    <div class="navigationMain">
-                        <table width="100%">
-                            <tr>
-                                <td width="45%">
-                                    <div class='navigation'
-                                        style='margin-bottom:10px; margin-top:10px;'>
-                                        &nbsp;
-                                        <a href="page=0">Биринчи</a>
-                                        &nbsp;&nbsp;
-                                        <span>Мур.</span>
-                                        &nbsp;
-                                        <span>1</span>
-                                        &nbsp;&nbsp;
-                                        <a href="page=1">2</a>
-                                        &nbsp;
-                                        <a href="page=2">3</a>
-                                        &nbsp;<a href="page=1">Кий.</a>
-                                        &nbsp;<a href="page=3">Акыркы</a>
-                                        &nbsp;
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+
+                    <div class="newsDetailsPage__img">
+                        <img src="https://www.tripzaza.com/ru/destinations/wp-content/uploads/2018/06/Dostoprimechatelnosti-Kirgizii-e1528640117864.jpg"
+                            alt="">
+                    </div>
+
+
+
+                    <p class="newsDetailsPage__text">
+                        Следует отметить, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании приоритизации разума над эмоциями. Так же важно что
+                        сплочённость команды профессионалов играет важную роль в формировании приоритизации разума над эмоциями. В частности, разбавленное.
+                    </p>
+
+                    <p class="newsDetailsPage__text">
+                        Изрядной долей эмпатии, рациональное мышление является качественно новой ступенью новых предложений. С другой стороны, дальнейшее развитие различных форм деятельности является
+                        качественно новой ступенью новых предложений. А также активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть
+                        ограничены исключительно образом мышления.
+                    </p>
+                    <p class="newsDetailsPage__text">
+                        Мы вынуждены отталкиваться от того, что дальнейшее развитие различных форм деятельности говорит о возможностях стандартных подходов. Таким образом, высокое качество позиционных
+                        исследований предполагает независимые способы реализации системы обучения кадров, соответствующей насущным потребностям. Прежде всего, глубокий уровень погружения, а также
+                        свежий взгляд на привычные вещи — безусловно открывает новые горизонты для кластеризации усилий.
+                    </p>
+                    <p class="newsDetailsPage__text">
+                        Идейные соображения высшего порядка, а также разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации новых предложений. Таким образом,
+                        понимание сути ресурсосберегающих технологий является качественно новой ступенью системы массового участия. Противоположная точка зрения подразумевает, что сделанные на базе
+                        интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, рассмотрены исключительно в разрезе маркетинговых и
+                        финансовых предпосылок. Каждый из нас понимает очевидную вещь: внедрение современных методик является качественно новой ступенью экономической целесообразности принимаемых
+                        решений. Предварительные выводы неутешительны: убеждённость некоторых оппонентов, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для
+                        первоочередных требований. В частности, разбавленное изрядной долей эмпатии, рациональное мышление предполагает независимые способы реализации благоприятных перспектив.
+                        Безусловно, повышение уровня гражданского сознания позволяет оценить значение дальнейших направлений развития.
+                    </p>
+                    <p class="newsDetailsPage__text">
+                        Идейные соображения высшего порядка, а также разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации новых предложений. Таким образом,
+                        понимание сути ресурсосберегающих технологий является качественно новой ступенью системы массового участия. Противоположная точка зрения подразумевает, что сделанные на базе
+                        интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, рассмотрены исключительно в разрезе маркетинговых и
+                        финансовых предпосылок. Каждый из нас понимает очевидную вещь: внедрение современных методик является качественно новой ступенью экономической целесообразности принимаемых
+                        решений. Предварительные выводы неутешительны: убеждённость некоторых оппонентов, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для
+                        первоочередных требований. В частности, разбавленное изрядной долей эмпатии, рациональное мышление предполагает независимые способы реализации благоприятных перспектив.
+                        Безусловно, повышение уровня гражданского сознания позволяет оценить значение дальнейших направлений развития.
+                    </p>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://www.tripzaza.com/ru/destinations/wp-content/uploads/2018/06/Dostoprimechatelnosti-Kirgizii-e1528640117864.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://pibig.info/uploads/posts/2021-05/1621922241_4-pibig_info-p-gornii-kirgizstan-priroda-krasivo-foto-4.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://static-2.akipress.org/st_gallery/70/554970.492283d4ba8753291b21651eea07aad4.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://st-1.akipress.org/127/.storage/limon2/images/may2017/a28a8400cff0ab0775eeab15ef5ea7f4.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/mySwiper.js"></script>
 </body>
 
 </html>

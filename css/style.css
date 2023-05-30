@@ -91,6 +91,19 @@ input {
   padding-bottom: calc(120px + 120 * ((100vw - 320px) / 1600));
 }
 
+.navigationMain {
+  margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
+}
+.navigationMain span {
+  color: #000;
+}
+.navigationMain td {
+  text-align: center;
+}
+.navigationMain a {
+  color: #2F5AA8;
+}
+
 .header {
   color: #2F5AA8;
 }
