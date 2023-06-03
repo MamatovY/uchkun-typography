@@ -7,14 +7,17 @@
 }
 .docsPage__grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
-  grid-template-columns: repeat(7, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #959595;
   border-bottom: 1px solid #B6B8BC;
   padding: calc(10px + 10 * ((100vw - 320px) / 1600));
   padding-left: 0;
   padding-right: 0;
-  font-size: calc(6px + 10 * ((100vw - 320px) / 1600));
+  font-size: calc(9px + 13 * ((100vw - 320px) / 1600));
 }
 .docsPage__grid.title {
   color: #000;
