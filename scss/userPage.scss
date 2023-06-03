@@ -12,11 +12,13 @@
     &__content {
         display: grid;
         grid-template-columns: auto auto;
+        align-items: flex-start;
         @include adaptive-value ('gap', 40, 10, 3);
     }
 
     &__img {
         img {
+            height: calc(100vw/6);
             object-fit: cover;
         }
     }
