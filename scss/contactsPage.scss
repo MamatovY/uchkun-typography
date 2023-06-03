@@ -30,9 +30,24 @@
         @include adaptive-value('column-gap', 50, 10, 3);
     }
 
+    &__text {
+        textarea {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            border-bottom: 1px solid #000;
+            @include adaptive-value('font-size', 26, 12, 3);
+            @include adaptive-value('padding', 15, 7, 3);
+        }
+
+        textarea:active {
+            color: red;
+        }
+    }
+
     &__policy {
-        border-top: 1px solid #000;
-        @include adaptive-value('margin-top', 120, 80, 3);
+
         @include adaptive-value('padding-top', 10, 5, 3);
     }
 

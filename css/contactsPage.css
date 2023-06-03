@@ -32,9 +32,19 @@
      -moz-column-gap: calc(10px + 40 * ((100vw - 320px) / 1600));
           column-gap: calc(10px + 40 * ((100vw - 320px) / 1600));
 }
+.contacts__text textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  font-size: calc(12px + 14 * ((100vw - 320px) / 1600));
+  padding: calc(7px + 8 * ((100vw - 320px) / 1600));
+}
+.contacts__text textarea:active {
+  color: red;
+}
 .contacts__policy {
-  border-top: 1px solid #000;
-  margin-top: calc(80px + 40 * ((100vw - 320px) / 1600));
   padding-top: calc(5px + 5 * ((100vw - 320px) / 1600));
 }
 .contacts .btn {
