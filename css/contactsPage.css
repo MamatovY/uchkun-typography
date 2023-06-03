@@ -38,7 +38,7 @@
   background: none;
   outline: none;
   border-bottom: 1px solid #000;
-  font-size: calc(12px + 14 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 12 * ((100vw - 320px) / 1600));
   padding: calc(7px + 8 * ((100vw - 320px) / 1600));
 }
 .contacts__text textarea:active {
