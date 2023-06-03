@@ -32,6 +32,9 @@
   margin-top: calc(30px + 40 * ((100vw - 320px) / 1600));
   color: #FFF;
 }
+.banner h3 {
+  color: #FFF;
+}
 
 .ourServices {
   margin-top: calc(30px + 40 * ((100vw - 320px) / 1600));
