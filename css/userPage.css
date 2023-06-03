@@ -14,7 +14,6 @@
   gap: calc(10px + 30 * ((100vw - 320px) / 1600));
 }
 .user__img img {
-  height: 16.6666666667vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
