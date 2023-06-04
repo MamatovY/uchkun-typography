@@ -26,8 +26,13 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.newsPage__item-text {
+.newsPage__item-content {
   padding: calc(10px + 10 * ((100vw - 320px) / 1600));
+  padding-top: 0;
+}
+.newsPage__item-views {
+  opacity: 0.5;
+  text-align: right;
 }
 
 @media (max-width: 768px) {
@@ -54,7 +59,8 @@
   .newsPage__item-img img {
     height: auto;
   }
-  .newsPage__item-text {
+  .newsPage__item-content {
     padding: calc(15px + 5 * ((100vw - 320px) / 1600));
+    padding-top: 0;
   }
 }/*# sourceMappingURL=newsPage.css.map */

@@ -31,8 +31,14 @@
             }
         }
 
-        &-text {
+        &-content {
             @include adaptive-value('padding', 20, 10, 3);
+            padding-top: 0;
+        }
+
+        &-views {
+            opacity: 0.5;
+            text-align: right;
         }
     }
 }
@@ -79,8 +85,9 @@
                 }
             }
 
-            &-text {
+            &-content {
                 @include adaptive-value('padding', 20, 15, 3);
+                padding-top: 0;
             }
         }
     }
