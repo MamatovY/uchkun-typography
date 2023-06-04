@@ -26,6 +26,10 @@
             @include adaptive-value('gap', 50, 5, 3);
         }
 
+        &__right {
+            font-weight: 400;
+        }
+
         &__date {
             text-align: center;
             font-weight: 600;

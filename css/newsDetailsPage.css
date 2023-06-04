@@ -26,6 +26,9 @@
   display: flex;
   gap: calc(5px + 45 * ((100vw - 320px) / 1600));
 }
+.newsDetailsPage__title__right {
+  font-weight: 400;
+}
 .newsDetailsPage__title__date {
   text-align: center;
   font-weight: 600;

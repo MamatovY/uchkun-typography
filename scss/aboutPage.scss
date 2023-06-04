@@ -47,8 +47,6 @@
 }
 
 .photos {
-
-
     img {
         height: calc(100vw/7.5);
     }
@@ -64,6 +62,7 @@
         @include adaptive-value('gap', 30, 10, 3);
 
         img {
+            width: 100%;
             height: 100%;
             object-fit: cover;
             cursor: pointer;
@@ -84,7 +83,7 @@
             height: 100%;
             left: 0;
             top: 0;
-            background-color: rgba($color: #000000, $alpha: 0.7);
+            background-color: rgba($color: #000000, $alpha: 0.9);
         }
 
         .closeGallery {
@@ -124,11 +123,11 @@
 
             .prev-btn,
             .next-btn {
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
                 background-color: rgba(0, 0, 0, 0.5);
                 color: #fff;
-                font-size: 24px;
+                font-size: 36px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -136,31 +135,53 @@
             }
         }
 
-
         &.hidden {
             display: none;
         }
-
     }
 
 
     .pagination {
         position: relative;
         z-index: 99;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
+        top: 20px;
 
-        img {
-            max-width: 100%;
-            height: 10vh;
-            object-fit: cover;
-            cursor: pointer;
+
+        .swiper-wrapper {
+            align-items: stretch;
+
+            .swiper-slide {
+                height: auto;
+
+                img.active {
+                    opacity: 1;
+                    border: 2px solid #FFF;
+                }
+
+                img {
+                    opacity: 0.3;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
         }
+    }
+}
 
-        img.active {
-            transform: scale(1.3);
-            border: 2px solid #FFF;
+@media (max-width:1024px) {
+    .gallery {
+        .pagination {
+            top: 10px;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    img {
+                        height: 55%;
+                    }
+                }
+            }
         }
     }
 }
@@ -200,6 +221,12 @@
 }
 
 @media (max-width:425px) {
+    .gallery {
+        .thumbnails {
+            grid-template-columns: 1fr;
+        }
+    }
+
     .photos {
         grid-template-columns: 1fr;
 

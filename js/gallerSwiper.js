@@ -4,8 +4,26 @@ const mainImage = document.querySelector('.main-content img');
 const mainImageContainer = document.querySelector('.main-content');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
-const pagination = document.querySelector('.pagination');
+const pagination = document.querySelector('.pagination .swiper-wrapper');
 const closeGallery = document.querySelector('.closeGallery');
+
+const swiper = new Swiper('.pagination', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        425: {
+            slidesPerView: 4,
+        },
+        1025: {
+            slidesPerView: 8
+        }
+    }
+});
+
 let currentIndex = 0;
 
 // Add event listener to the entire document to handle keyboard events
@@ -29,7 +47,6 @@ document.addEventListener('keyup', function (event) {
 
 // Add event listener to each thumbnail
 thumbnails.forEach((thumbnail, index) => {
-
     thumbnail.addEventListener('click', () => {
         currentIndex = index;
         updateMainImage();
@@ -66,19 +83,21 @@ function updateMainImage() {
     const selectedThumbnail = thumbnails[currentIndex];
     const imageUrl = selectedThumbnail.getAttribute('src');
     mainImage.setAttribute('src', imageUrl);
+    swiper.slideTo(currentIndex);
 }
 
 // Update pagination function
 function updatePagination() {
     pagination.innerHTML = '';
-
     thumbnails.forEach((thumbnail, index) => {
+        const paginationSlide = document.createElement('div');
+        paginationSlide.classList.add('swiper-slide');
         const paginationItem = document.createElement('img');
         paginationItem.setAttribute('src', thumbnail.getAttribute('src'));
         paginationItem.setAttribute('alt', `Image ${index + 1}`);
 
         // Add event listener to each pagination item
-        paginationItem.addEventListener('click', () => {
+        paginationSlide.addEventListener('click', () => {
             currentIndex = index;
             updateMainImage();
             updatePagination();
@@ -88,6 +107,7 @@ function updatePagination() {
             paginationItem.classList.add('active');
         }
 
-        pagination.appendChild(paginationItem);
+        paginationSlide.appendChild(paginationItem);
+        pagination.appendChild(paginationSlide);
     });
 }
