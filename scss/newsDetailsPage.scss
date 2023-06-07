@@ -16,19 +16,9 @@
     }
 
     &__title {
-        @include adaptive-value('margin-bottom', 30, 15, 3);
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__left {
-            display: flex;
-            @include adaptive-value('gap', 50, 5, 3);
-        }
-
-        &__right {
-            font-weight: 400;
-        }
+        @include adaptive-value('margin-bottom', 30, 15, 3);
+        @include adaptive-value('gap', 50, 5, 3);
 
         &__date {
             text-align: center;
@@ -47,6 +37,13 @@
             display: flex;
             align-items: center;
         }
+    }
+
+    &__views {
+        font-weight: 400;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
     }
 
     &__text {
