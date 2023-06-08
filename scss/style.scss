@@ -49,8 +49,9 @@ input {
     border: none;
     outline: none;
     width: 100%;
-    @include adaptive-value('font-size', 20, 12, 3);
+    @include adaptive-value('font-size', 16, 12, 3);
     @include adaptive-value('padding', 15, 7, 3);
+    padding-right: 0;
 }
 
 .input {
