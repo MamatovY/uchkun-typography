@@ -387,8 +387,6 @@ input {
         &-link {
             border-top: 1px solid #DBDBDB;
             border-bottom: 1px solid #DBDBDB;
-            display: flex;
-            gap: 20px;
             @include adaptive-value('margin-bottom', 25, 10, 3);
             @include adaptive-value('padding-top', 25, 10, 3);
             @include adaptive-value('padding-bottom', 25, 10, 3);
