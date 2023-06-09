@@ -93,6 +93,11 @@
   position: relative;
   margin-bottom: calc(5px + 10 * ((100vw - 320px) / 1600));
 }
+.possibilities__item-img img {
+  height: calc(50px + 200 * ((100vw - 320px) / 1600));
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .possibilities__item-background {
   position: absolute;
   top: 0;
@@ -261,6 +266,9 @@
     grid-template-columns: auto auto;
   }
   .gallery__img img {
+    height: auto;
+  }
+  .possibilities__item-img img {
     height: auto;
   }
   .possibilities__items,
