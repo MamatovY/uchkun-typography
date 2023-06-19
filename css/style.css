@@ -132,6 +132,9 @@ input {
 .header__top__search {
   gap: calc(5px + 5 * ((100vw - 320px) / 1600));
 }
+.header__top-glasses {
+  cursor: pointer;
+}
 .header__top-open {
   cursor: pointer;
 }

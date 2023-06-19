@@ -137,6 +137,10 @@ input {
             @include adaptive-value('gap', 10, 5, 3);
         }
 
+        &-glasses {
+            cursor: pointer;
+        }
+
         &-open {
             cursor: pointer;
 
