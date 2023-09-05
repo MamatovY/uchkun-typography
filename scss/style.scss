@@ -380,6 +380,9 @@ input {
     }
 
     &__footer {
+        img {
+            width: auto;
+        }
 
         @include adaptive-value('margin-top', 100, 50, 3);
 

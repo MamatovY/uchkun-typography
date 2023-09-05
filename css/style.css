@@ -352,6 +352,9 @@ input {
 .aside__footer {
   margin-top: calc(50px + 50 * ((100vw - 320px) / 1600));
 }
+.aside__footer img {
+  width: auto;
+}
 .aside__footer-link {
   border-top: 1px solid #DBDBDB;
   border-bottom: 1px solid #DBDBDB;
